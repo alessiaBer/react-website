@@ -1,18 +1,14 @@
-import React from 'react';
-import Navbar from './components/Navbar';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import './App.css';
+import React from "react";
+import Navbar from "./components/Navbar";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <>
-    <Router>
-    <Navbar />
-    <Switch>
-      <Route path='/' exact />
-    </Switch>
-    </Router>  
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<div>Metti il tuo component qui</div>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
